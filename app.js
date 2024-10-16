@@ -10,7 +10,7 @@ const authRoute = require("./routes/user");
 const transactionRoute = require("./routes/transactionRoutes");
 
 const User = require('./models/user');
-const Fund = require('./models/Fund');
+const Fund = require('./models/fund');
 
 const app = express();
 app.use(cors({
