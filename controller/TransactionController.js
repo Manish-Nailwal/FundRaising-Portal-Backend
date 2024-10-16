@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const Transaction = require("../models/transaction");
-const Fund = require("../models/Fund");
+const Fund = require("../models/fund");
 
 module.exports.addTransaction = async (req, res) => {
   let donationData = req.body.data;
