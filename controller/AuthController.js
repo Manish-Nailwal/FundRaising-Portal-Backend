@@ -64,3 +64,9 @@ module.exports.Login = async (req, res, next) => {
       console.error(error);
     }
   }
+
+  module.exports.Logout=async (req,res)=>{
+    await res.clearCookie('token');
+    console.log('Logout Successful');
+    res.json({status: false, message: 'Logout Successfully'});
+  }
